@@ -1,0 +1,239 @@
+.body {
+    background-color: black;
+
+    font-family: 'Nunito', sans-serif;
+}
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+.first {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.left-menu {
+    width: 30%;
+    background-color: black;
+    height: 85vh;
+}
+.left-nav {
+    background-color: #121212;
+    border-radius: 8%;
+    height: 150px;
+    margin: 0 5%;
+    width: 90%;
+}
+.left-nav ul {
+    list-style: none;
+    color: #b3b3b3;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    height: 20vh;
+}
+
+.logo-spotify {
+    height: 24 px;
+    width: 78px;
+}
+
+.nav-icons {
+    font-size: 22px;
+    margin-right: 20px;
+    max-width: 22px;
+    max-height: 22px;
+}
+.library {
+    height: 54vh;
+    background-color: #121212;
+    width: 90%;
+    margin: 1.5vh 5%;
+    border-radius: 8px;
+}
+.library-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px 10%;
+    color: #b3b3b3;
+    height: 50px;
+}
+.playlist-menu {
+    height: 25vh;
+    width: 90%;
+    margin: 20px 5%;
+    overflow-y: scroll;
+    border-radius: 9px;
+}
+.playlist-card {
+    background-color: #242424;
+    width: 90%;
+    margin: 20px 5%;
+    padding: 20px;
+    border-radius: 9px;
+}
+.playlist-create {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.simple-create {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.playlist-button {
+    appearance: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 150px;
+    margin: 10px 0;
+}
+
+.second {
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(
+        90deg,
+        rgba(174, 41, 151, 1) 0%,
+        rgba(126, 99, 199, 1) 50%,
+        rgba(81, 154, 244, 1) 100%
+    );
+}
+
+.catalog {
+    width: 70%;
+    height: 857h;
+    background-color: #121212;
+    margin: 0.7vh 0;
+    border-radius: 9px;
+}
+.catalog-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px 5%;
+    color: white;
+}
+.block {
+    display: block;
+}
+
+.catalog-register {
+    background-color: transparent;
+    color: #b3b3b3;
+}
+.catalog-login {
+    background-color: white;
+    color: black;
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+.catalog-login,
+.catalog-register {
+    appearance: none;
+    border: none;
+    height: 40px;
+    font-weight: 600;
+}
+.catalog-login:hover {
+    width: 160px;
+    height: 45px;
+}
+.catalog-register:hover {
+    color: white;
+}
+.center-second-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+}
+.second-info {
+    width: 70%;
+}
+.extract {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font: 0.75em;
+}
+.register-info {
+    font-size: 1rem;
+}
+.extract,
+.register-info {
+    color: white;
+    font-weight: 400;
+}
+.register-button {
+    width: 243px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #f6f6f6;
+}
+
+.content {
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(36, 36, 36, 1) 0%,
+        rgba(18, 18, 18, 1) 100%
+    );
+    height: 70vh;
+}
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+    margin: 20px 5%;
+
+    height: 70vh;
+}
+.playlist-title {
+    color: white;
+    font-size: 19px;
+    height: 10%;
+}
+.playlist-title:hover {
+    /* Surlignage */
+    text-decoration: underline;
+}
+.display-all {
+    color: #b3b3b3;
+    font-size: 14px;
+    height: 10%;
+}
+.display-all:hover {
+    text-decoration: underline;
+}
+.catalog-card-container {
+    width: 90%;
+    margin: 20px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.catalog-card {
+    width: 15%;
+    background-color: red;
+    height: 200px;
+}
+.catalog-card-img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}

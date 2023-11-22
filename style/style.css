@@ -14,9 +14,11 @@ body {
     width: 100%;
     height: 90vh;
     display: flex;
+    justify-content: center;
 }
 .second {
-    width: 100%;
+    width: 97%;
+    margin: 5px 20px;
     height: 70px;
     padding: 7px;
     background: linear-gradient(
@@ -26,6 +28,7 @@ body {
         rgba(92, 145, 235, 1) 100%
     );
 }
+/* burger*/
 .left-burger,
 .burger {
     display: none;
@@ -35,16 +38,16 @@ body {
     height: 90vh;
 }
 .catalog {
-    width: 70%;
+    width: 69%;
     background-color: #121212;
-    height: 87vh;
+    height: 85vh;
     margin: 0.7vh 0;
     border-radius: 9px;
 }
 
 .center-second-content {
     width: 90%;
-    margin: 0 5%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +129,7 @@ body {
     height: 50px;
 }
 .playlist-menu {
-    height: 25vh;
+    height: 30vh;
     width: 90%;
     margin: 20px 5%;
     overflow-y: scroll;
@@ -134,7 +137,7 @@ body {
 }
 .playlist-card {
     background-color: #242424;
-    width: 90%;
+    width: 80%;
     margin: 20px 5%;
     padding: 20px;
     border-radius: 9px;
@@ -204,7 +207,7 @@ body {
         rgba(36, 36, 36, 1) 0%,
         rgba(18, 18, 18, 1) 100%
     );
-    height: 70vh;
+    height: 75vh;
 }
 .content-header {
     display: flex;
@@ -226,27 +229,24 @@ body {
     color: #b3b3b3;
     font-size: 14px;
 }
-
+/*catalogue card*/
 .catalog-card-container {
-    box-sizing: border-box;
-    width: 700px;
-    margin: 20px 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    height: 45vh;
     overflow-x: scroll;
-    gap: 10px;
-    height: 50vh;
-    max-width: 100%;
 }
-/* .catalog-card-container:nth-child() */
+.catalog-cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 0 10px;
+    width: 1200px;
+}
 
 .catalog-card {
-    box-sizing: border-box;
+    width: 180px;
     flex-shrink: 0;
-    width: 208px;
-    margin: 20px 2.5%;
-    height: 289px;
+    height: 230px;
     background-color: #272727;
     display: flex;
     flex-direction: column;
@@ -258,8 +258,7 @@ body {
 
 .catalog-card-img {
     height: 200px;
-    width: 90%;
-    object-fit: cover;
+    width: 100px;
     margin: 10px 5%;
 }
 .catalog-card h4 {
@@ -271,26 +270,79 @@ body {
     font-size: 12px;
     color: white;
 }
+
+/*player*/
 .player {
+    background-color: #272727;
+    border-radius: 8px;
     color: white;
     display: flex;
     flex-direction: row;
-    height: 150px;
-    width: 100%;
+    height: 80px;
+    width: 98%;
     justify-content: flex-start;
-    gap: 10px;
+    margin: 10px;
 }
 .player img {
-    width: 50px;
-    height: 50px;
+    margin: 10px 5px;
+    width: 60px;
+    height: 60px;
+}
+.player-text {
+    align-items: center;
+    align-self: end;
+    margin: 10px 5px;
 }
 .player-text h3 {
     margin: 0;
     padding: 0;
 }
 .controler {
-    margin: 10px 0;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 50px;
 }
+.controler-button {
+    margin: 10px auto;
+}
+.controler-button button {
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+}
+.slide {
+    margin: auto;
+}
+.slide span {
+    display: inline-block;
+    margin: 3px 3px;
+    width: 150px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 8px;
+}
+.volume {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+.basse-icon {
+    margin: auto 5px;
+}
+.volume-icon {
+    margin: auto 5px;
+}
+.volume-slide {
+    margin: auto 0;
+    background-color: rgba(255, 255, 255, 0.418);
+    width: 100px;
+    height: 5px;
+    border-radius: 8px;
+}
+/****************/
+/*media queries*/
 
 @media screen and (max-width: 768px) {
     .left-menu {

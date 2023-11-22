@@ -1,44 +1,107 @@
-.body {
+.main {
     background-color: black;
-
-    font-family: 'Nunito', sans-serif;
-}
-main {
     height: 100vh;
     width: 100%;
 }
 
+body {
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 !important;
+}
+
 .first {
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     display: flex;
+}
+.second {
+    width: 100%;
+    height: 70px;
+    padding: 7px;
+    background: linear-gradient(
+        90deg,
+        rgba(172, 43, 151, 1) 0%,
+        rgba(132, 104, 200, 1) 50%,
+        rgba(92, 145, 235, 1) 100%
+    );
+}
+.left-burger,
+.burger {
+    display: none;
 }
 .left-menu {
     width: 30%;
-    background-color: black;
-    height: 85vh;
+    height: 90vh;
 }
+.catalog {
+    width: 70%;
+    background-color: #121212;
+    height: 87vh;
+    margin: 0.7vh 0;
+    border-radius: 9px;
+}
+
+.center-second-content {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-info {
+    width: 70%;
+}
+.extract {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.register-info {
+    font-size: 1rem;
+}
+
+.extract,
+.register-info {
+    color: white;
+    font-weight: 400;
+}
+
+.register-button {
+    width: 243px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.logo-spotify {
+    width: 78px;
+    height: 24px;
+}
+
 .left-nav {
     background-color: #121212;
-    border-radius: 8%;
-    height: 150px;
-    margin: 0 5%;
+    height: 20vh;
+    border-radius: 9px;
     width: 90%;
+    margin: 0 5%;
 }
 .left-nav ul {
     list-style: none;
     color: #b3b3b3;
-    margin: 20px 0;
+    margin: 5px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 20px;
     height: 20vh;
+    font-weight: 600;
 }
 
-.logo-spotify {
-    height: 24 px;
-    width: 78px;
+.left-nav ul li:hover,
+.library-title:hover {
+    color: white;
 }
 
 .nav-icons {
@@ -48,11 +111,10 @@ main {
     max-height: 22px;
 }
 .library {
-    height: 54vh;
+    height: 65vh;
     background-color: #121212;
     width: 90%;
     margin: 1.5vh 5%;
-    border-radius: 8px;
 }
 .library-title {
     display: flex;
@@ -95,26 +157,12 @@ main {
     height: 40px;
     width: 150px;
     margin: 10px 0;
+    border: none;
+}
+.block {
+    display: block;
 }
 
-.second {
-    width: 100%;
-    height: 15vh;
-    background: linear-gradient(
-        90deg,
-        rgba(174, 41, 151, 1) 0%,
-        rgba(126, 99, 199, 1) 50%,
-        rgba(81, 154, 244, 1) 100%
-    );
-}
-
-.catalog {
-    width: 70%;
-    height: 857h;
-    background-color: #121212;
-    margin: 0.7vh 0;
-    border-radius: 9px;
-}
 .catalog-nav {
     display: flex;
     justify-content: space-between;
@@ -122,9 +170,6 @@ main {
     width: 90%;
     margin: 20px 5%;
     color: white;
-}
-.block {
-    display: block;
 }
 
 .catalog-register {
@@ -152,39 +197,6 @@ main {
 .catalog-register:hover {
     color: white;
 }
-.center-second-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 5%;
-}
-.second-info {
-    width: 70%;
-}
-.extract {
-    text-transform: uppercase;
-    margin-top: 5px;
-    font: 0.75em;
-}
-.register-info {
-    font-size: 1rem;
-}
-.extract,
-.register-info {
-    color: white;
-    font-weight: 400;
-}
-.register-button {
-    width: 243px;
-    height: 50px;
-    border-radius: 25px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: #f6f6f6;
-}
-
 .content {
     width: 100%;
     background: linear-gradient(
@@ -197,16 +209,14 @@ main {
 .content-header {
     display: flex;
     justify-content: space-between;
-    color: white;
     width: 90%;
     margin: 20px 5%;
-
-    height: 70vh;
+    align-items: center;
+    height: 50px;
 }
 .playlist-title {
     color: white;
     font-size: 19px;
-    height: 10%;
 }
 .playlist-title:hover {
     /* Surlignage */
@@ -215,25 +225,150 @@ main {
 .display-all {
     color: #b3b3b3;
     font-size: 14px;
-    height: 10%;
 }
-.display-all:hover {
-    text-decoration: underline;
-}
+
 .catalog-card-container {
-    width: 90%;
-    margin: 20px 5%;
+    box-sizing: border-box;
+    width: 700px;
+    margin: 20px 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow-x: scroll;
+    gap: 10px;
+    height: 50vh;
+    max-width: 100%;
 }
+/* .catalog-card-container:nth-child() */
+
 .catalog-card {
-    width: 15%;
-    background-color: red;
-    height: 200px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 208px;
+    margin: 20px 2.5%;
+    height: 289px;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
 }
+
 .catalog-card-img {
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    margin: 10px 5%;
+}
+.catalog-card h4 {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+}
+.catalog-card p {
+    font-size: 12px;
+    color: white;
+}
+.player {
+    color: white;
+    display: flex;
+    flex-direction: row;
     height: 150px;
     width: 100%;
-    object-fit: cover;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.player img {
+    width: 50px;
+    height: 50px;
+}
+.player-text h3 {
+    margin: 0;
+    padding: 0;
+}
+.controler {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .left-menu {
+        display: none;
+    }
+    .catalog {
+        width: 100%;
+    }
+    .catalog-card-container {
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 3%;
+        height: 60vh;
+    }
+    .catalog-card {
+        width: 50%;
+        height: 250px;
+        margin: 10px;
+    }
+    .register-button {
+        width: 150px;
+    }
+    .extract {
+        font-size: 0.6rem;
+    }
+    .register-info {
+        font-size: 0.6rem;
+        margin-right: 5px;
+    }
+    .catalog-nav {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        margin: 10px;
+        width: 90%;
+    }
+    .burger {
+        display: block;
+    }
+    .burger i {
+        text-align: center;
+        width: 50px;
+    }
+    .arrow {
+        width: 80px;
+    }
+    .catalog-login {
+        width: 100px;
+    }
+    .catalog-login:hover {
+        width: 100px;
+        height: 40px;
+    }
+    .left-menu-active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-nav {
+        margin: 5%;
+    }
+    .logo-spotify {
+        padding: 5px;
+        width: 98px;
+        height: 31px;
+    }
+    .li-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 25px;
+    }
+    .left-burger {
+        padding: 10%;
+        display: block;
+    }
+    .catalog-active {
+        display: none;
+    }
 }

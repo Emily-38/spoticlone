@@ -6,14 +6,21 @@
         <title>
             Spoticlone - Lecteur web: de la musique pour tout le monde
         </title>
+
         <link rel="stylesheet" href="./style/reset.css" />
         <link rel="stylesheet" href="./style/style.css" />
+
+        <!-- Importer Google fonts ici -->
+        <!-- Commenter du code = Selectionner le code  et ctrl K C       ctrl K U -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Fin import Google fonts -->
     </head>
     <body>
         <div class="main">
@@ -21,25 +28,32 @@
                 <div class="left-menu">
                     <div class="left-nav">
                         <ul>
-                            <li>
+                            <li class="li-header">
                                 <img
                                     src="./medias/Spotify_Logo_RGB_White.png"
                                     alt="logo spotify"
                                     class="logo-spotify"
                                 />
+                                <div class="left-burger">
+                                    <i
+                                        class="fa-solid fa-xmark fa-xl"
+                                        style="color: #ffffff"
+                                    ></i>
+                                </div>
                             </li>
                             <li>
-                                <i class="fa-solid fa-house nav-icons"></i
-                                >Acceuil
+                                <i class="fa-solid fa-house nav-icons"></i>
+                                Accueil
                             </li>
                             <li>
                                 <i
                                     class="fa-solid fa-magnifying-glass nav-icons"
                                 ></i
-                                >Recherche
+                                >Rechercher
                             </li>
                         </ul>
                     </div>
+
                     <div class="library">
                         <div class="library-title">
                             <p>
@@ -75,10 +89,19 @@
                             </div>
                         </div>
                     </div>
+                    <div
+                        class="flex items-center justify-center bg-white"
+                    ></div>
                 </div>
                 <div class="catalog">
                     <div class="catalog-nav">
-                        <div>
+                        <div class="burger">
+                            <i
+                                class="fa-solid fa-bars fa-xl"
+                                style="color: #ffffff"
+                            ></i>
+                        </div>
+                        <div class="arrow">
                             <i
                                 class="fa-solid fa-chevron-left block nav-icons"
                             ></i>
@@ -95,19 +118,112 @@
                         <div class="content-header">
                             <h2 class="playlist-title">Playlists Spotify</h2>
                             <p class="display-all">Tout afficher</p>
+                        </div>
 
-                            <div class="catalog-card-container">
-                                <div class="catalog-card">
-                                    <img
-                                        class="catalog-card-img"
-                                        src="./medias/photo-1521119989659-a83eee488004.avif"
-                                        alt=""
-                                    />
+                        <div class="catalog-card-container">
+                            <div class="catalog-card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1619983081563-430f63602796?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHwxfDB8fHww"
+                                    class="catalog-card-img"
+                                />
+                                <div class="card-text">
+                                    <h4>Today top hits</h4>
+                                    <p>Dua lipa want you to go to hospital</p>
                                 </div>
-                                <div class="catalog-card"></div>
-                                <div class="catalog-card"></div>
-                                <div class="catalog-card"></div>
-                                <div class="catalog-card"></div>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1619983081563-430f63602796?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHwxfDB8fHww"
+                                    class="catalog-card-img"
+                                />
+                                <div class="card-text">
+                                    <h4>Today top hits</h4>
+                                    <p>Dua lipa want you to go to hospital</p>
+                                </div>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1619983081563-430f63602796?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHwxfDB8fHww"
+                                    class="catalog-card-img"
+                                />
+                                <div class="card-text">
+                                    <h4>Today top hits</h4>
+                                    <p>Dua lipa want you to go to hospital</p>
+                                </div>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1619983081563-430f63602796?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHwxfDB8fHww"
+                                    class="catalog-card-img"
+                                />
+                                <div class="card-text">
+                                    <h4>Today top hits</h4>
+                                    <p>Dua lipa want you to go to hospital</p>
+                                </div>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1619983081563-430f63602796?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHwxfDB8fHww"
+                                    class="catalog-card-img"
+                                />
+                                <div class="card-text">
+                                    <h4>Today top hits</h4>
+                                    <p>Dua lipa want you to go to hospital</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player">
+                            <img
+                                src="/medias/photo-1521119989659-a83eee488004.avif"
+                                alt="album"
+                            />
+                            <div class="player-text">
+                                <h3>Be mine</h3>
+                                <p>rip les cards</p>
+                            </div>
+                            <div class="controler">
+                                <button class="aleatoire">
+                                    <i
+                                        class="fa-solid fa-shuffle fa-xl"
+                                        style="color: #ffffff"
+                                    ></i>
+                                </button>
+                                <button class="return">
+                                    <i
+                                        class="fa-solid fa-backward fa-xl"
+                                        style="color: #ffffff"
+                                    ></i>
+                                </button>
+                                <button class="start">
+                                    <i
+                                        class="fa-solid fa-play fa-xl"
+                                        style="color: #ffffff"
+                                    ></i>
+                                </button>
+                                <button class="suivant">
+                                    <i
+                                        class="fa-solid fa-forward fa-xl"
+                                        style="color: #ffffff"
+                                    ></i>
+                                </button>
+                                <button class="boucle">
+                                    <i
+                                        class="fa-solid fa-rotate fa-xl"
+                                        style="color: #ffffff"
+                                    ></i>
+                                </button>
+                                <div>0.00 <span></span>4.00</div>
+                            </div>
+
+                            <div class="volume">
+                                <i
+                                    class="fa-solid fa-headphones fa-xl"
+                                    style="color: #ffffff"
+                                ></i
+                                ><i
+                                    class="fa-solid fa-volume-high fa-xl"
+                                    style="color: #ffffff"
+                                ></i>
                             </div>
                         </div>
                     </div>
@@ -117,7 +233,7 @@
             <div class="second">
                 <div class="center-second-content">
                     <div class="second-info">
-                        <p class="extract">Extrait sur spotify</p>
+                        <p class="extract">Extrait sur Spotify</p>
                         <p class="register-info">
                             Inscrivez-vous pour écouter titres et podcasts en
                             illimité, avec quelques coupures pubs. Pas besoin de
@@ -125,14 +241,17 @@
                         </p>
                     </div>
                     <button class="register-button">
-                        S'incrire gratuitement
+                        S'inscrire gratuitement
                     </button>
                 </div>
             </div>
         </div>
+        <script src="/burger.js"></script>
     </body>
+
+    <!-- Ne pas copier svp - merci et bonne journée -->
     <script
-        src="https://kit.fontawesome.com/27b15f5b77.js"
+        src="https://kit.fontawesome.com/ff684f1294.js"
         crossorigin="anonymous"
     ></script>
 </html>
